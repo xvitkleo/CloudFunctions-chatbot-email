@@ -1,0 +1,15 @@
+{
+    "questions": [
+        "Hola",
+        "Buenas",
+        "Buenos dias",
+        "Buenas tardes",
+        "Que tal"
+    ],
+    "answers": [
+        "Hola, ¿En qué puedo ayudarlo?",
+        "Buenas, ¿En qué puedo ayudarlo?",
+        "Buenos dias, ¿En qué puedo ayudarlo?",
+        "Que tal, ¿En qué puedo ayudarlo?"
+    ]
+}

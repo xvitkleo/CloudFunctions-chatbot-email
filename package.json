@@ -1,0 +1,26 @@
+{
+  "name": "arq-soft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "train": "node train.js",
+    "start1": "node index.js",
+    "start": "npx functions-framework --target=hey"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.2",
+    "@google-cloud/pubsub": "^3.2.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "node-nlp": "^4.24.0",
+    "node-schedule": "^2.1.0"
+  }
+}

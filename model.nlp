@@ -1,0 +1,1154 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "gracia": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hasta,luego": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "adio": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "nos,vemo": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "me,voy,ya": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hola": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "buena": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "bueno,dia": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "buena,tard": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "que,tal": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "linea,solicitar": {
+            "intent": "lineas.solicitar",
+            "domain": "default"
+          },
+          "linea,quiero": {
+            "intent": "lineas.solicitar",
+            "domain": "default"
+          },
+          "linea,necesito": {
+            "intent": "lineas.solicitar",
+            "domain": "default"
+          },
+          "linea,ver": {
+            "intent": "lineas.ver",
+            "domain": "default"
+          },
+          "linea": {
+            "intent": "lineas.ver",
+            "domain": "default"
+          },
+          "la,linea,ver": {
+            "intent": "lineas.ver",
+            "domain": "default"
+          },
+          "las,linea,ver": {
+            "intent": "lineas.ver",
+            "domain": "default"
+          },
+          "poliza,solicitar": {
+            "intent": "poliza.solicitar",
+            "domain": "default"
+          },
+          "necesito,poliza": {
+            "intent": "poliza.solicitar",
+            "domain": "default"
+          },
+          "poliza,quiero": {
+            "intent": "poliza.solicitar",
+            "domain": "default"
+          },
+          "poliza,ver": {
+            "intent": "poliza.ver",
+            "domain": "default"
+          },
+          "poliza,quiero,ver": {
+            "intent": "poliza.ver",
+            "domain": "default"
+          },
+          "la,poliza,ver": {
+            "intent": "poliza.ver",
+            "domain": "default"
+          },
+          "las,poliza,ver": {
+            "intent": "poliza.ver",
+            "domain": "default"
+          },
+          "declarar,siniestro": {
+            "intent": "siniestro.declarar",
+            "domain": "default"
+          },
+          "ocurrio,siniestro": {
+            "intent": "siniestro.declarar",
+            "domain": "default"
+          },
+          "siniestro,tengo,un": {
+            "intent": "siniestro.declarar",
+            "domain": "default"
+          },
+          "siniestro,ver": {
+            "intent": "siniestro.ver",
+            "domain": "default"
+          },
+          "siniestro": {
+            "intent": "siniestro.ver",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "lineas.solicitar": "default",
+          "lineas.ver": "default",
+          "poliza.solicitar": "default",
+          "poliza.ver": "default",
+          "siniestro.declarar": "default",
+          "siniestro.ver": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Gracias",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hasta luego",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Adios",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nos vemos",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ya me voy",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hola",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenas",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenos dias",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Buenas tardes",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Que tal",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "solicitar línea",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "solicitar líneas",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero línea",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero líneas",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "necesito línea",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "necesito líneas",
+            "intent": "lineas.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver línea",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver líneas",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "línea",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "líneas",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver la línea",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver las líneas",
+            "intent": "lineas.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "solicitar póliza",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "solicitar pólizas",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "necesito póliza",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "necesito pólizas",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero póliza",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero pólizas",
+            "intent": "poliza.solicitar"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver póliza",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver pólizas",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero ver póliza",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "quiero ver pólizas",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver la póliza",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver las pólizas",
+            "intent": "poliza.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "declarar siniestros",
+            "intent": "siniestro.declarar"
+          },
+          {
+            "domain": "default",
+            "utterance": "declarar siniestro",
+            "intent": "siniestro.declarar"
+          },
+          {
+            "domain": "default",
+            "utterance": "ocurrio siniestro",
+            "intent": "siniestro.declarar"
+          },
+          {
+            "domain": "default",
+            "utterance": "tengo un siniestro",
+            "intent": "siniestro.declarar"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver siniestros",
+            "intent": "siniestro.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "ver siniestro",
+            "intent": "siniestro.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "siniestros",
+            "intent": "siniestro.ver"
+          },
+          {
+            "domain": "default",
+            "utterance": "siniestro",
+            "intent": "siniestro.ver"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "gracia": 1,
+              "hasta": 1,
+              "luego": 1,
+              "adio": 1,
+              "nos": 1,
+              "vemo": 1,
+              "ya": 1,
+              "me": 1,
+              "voy": 1,
+              "hola": 1,
+              "buena": 1,
+              "bueno": 1,
+              "dia": 1,
+              "tard": 1,
+              "que": 1,
+              "tal": 1,
+              "solicitar": 1,
+              "linea": 1,
+              "quiero": 1,
+              "necesito": 1,
+              "ver": 1,
+              "la": 1,
+              "las": 1,
+              "poliza": 1,
+              "declarar": 1,
+              "siniestro": 1,
+              "ocurrio": 1,
+              "tengo": 1,
+              "un": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "lineas.solicitar": 1,
+              "lineas.ver": 1,
+              "poliza.solicitar": 1,
+              "poliza.ver": 1,
+              "siniestro.declarar": 1,
+              "siniestro.ver": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "gracia": 1,
+                "hasta": 1,
+                "luego": 1,
+                "adio": 1,
+                "nos": 1,
+                "vemo": 1,
+                "ya": 1,
+                "me": 1,
+                "voy": 1
+              },
+              "greetings.hello": {
+                "hola": 1,
+                "buena": 1,
+                "bueno": 1,
+                "dia": 1,
+                "tard": 1,
+                "que": 1,
+                "tal": 1
+              },
+              "lineas.solicitar": {
+                "solicitar": 1,
+                "linea": 1,
+                "quiero": 1,
+                "necesito": 1
+              },
+              "lineas.ver": {
+                "ver": 1,
+                "linea": 1,
+                "la": 1,
+                "las": 1
+              },
+              "poliza.solicitar": {
+                "solicitar": 1,
+                "poliza": 1,
+                "necesito": 1,
+                "quiero": 1
+              },
+              "poliza.ver": {
+                "ver": 1,
+                "poliza": 1,
+                "quiero": 1,
+                "la": 1,
+                "las": 1
+              },
+              "siniestro.declarar": {
+                "declarar": 1,
+                "siniestro": 1,
+                "ocurrio": 1,
+                "tengo": 1,
+                "un": 1
+              },
+              "siniestro.ver": {
+                "ver": 1,
+                "siniestro": 1
+              }
+            },
+            "featuresToIntent": {
+              "gracia": [
+                "greetings.bye"
+              ],
+              "hasta": [
+                "greetings.bye"
+              ],
+              "luego": [
+                "greetings.bye"
+              ],
+              "adio": [
+                "greetings.bye"
+              ],
+              "nos": [
+                "greetings.bye"
+              ],
+              "vemo": [
+                "greetings.bye"
+              ],
+              "ya": [
+                "greetings.bye"
+              ],
+              "me": [
+                "greetings.bye"
+              ],
+              "voy": [
+                "greetings.bye"
+              ],
+              "hola": [
+                "greetings.hello"
+              ],
+              "buena": [
+                "greetings.hello"
+              ],
+              "bueno": [
+                "greetings.hello"
+              ],
+              "dia": [
+                "greetings.hello"
+              ],
+              "tard": [
+                "greetings.hello"
+              ],
+              "que": [
+                "greetings.hello"
+              ],
+              "tal": [
+                "greetings.hello"
+              ],
+              "solicitar": [
+                "lineas.solicitar",
+                "poliza.solicitar"
+              ],
+              "linea": [
+                "lineas.solicitar",
+                "lineas.ver"
+              ],
+              "quiero": [
+                "lineas.solicitar",
+                "poliza.solicitar",
+                "poliza.ver"
+              ],
+              "necesito": [
+                "lineas.solicitar",
+                "poliza.solicitar"
+              ],
+              "ver": [
+                "lineas.ver",
+                "poliza.ver",
+                "siniestro.ver"
+              ],
+              "la": [
+                "lineas.ver",
+                "poliza.ver"
+              ],
+              "las": [
+                "lineas.ver",
+                "poliza.ver"
+              ],
+              "poliza": [
+                "poliza.solicitar",
+                "poliza.ver"
+              ],
+              "declarar": [
+                "siniestro.declarar"
+              ],
+              "siniestro": [
+                "siniestro.declarar",
+                "siniestro.ver"
+              ],
+              "ocurrio": [
+                "siniestro.declarar"
+              ],
+              "tengo": [
+                "siniestro.declarar"
+              ],
+              "un": [
+                "siniestro.declarar"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "gracia",
+                "hasta",
+                "luego",
+                "adio",
+                "nos",
+                "vemo",
+                "ya",
+                "me",
+                "voy",
+                "hola",
+                "buena",
+                "bueno",
+                "dia",
+                "tard",
+                "que",
+                "tal",
+                "solicitar",
+                "linea",
+                "quiero",
+                "necesito",
+                "ver",
+                "la",
+                "las",
+                "poliza",
+                "declarar",
+                "siniestro",
+                "ocurrio",
+                "tengo",
+                "un"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "lineas.solicitar",
+                "lineas.ver",
+                "poliza.solicitar",
+                "poliza.ver",
+                "siniestro.declarar",
+                "siniestro.ver"
+              ],
+              "perceptrons": [
+                [
+                  9.966979026794434,
+                  4.984678268432617,
+                  4.984678268432617,
+                  9.966176986694336,
+                  4.984556198120117,
+                  4.984556198120117,
+                  3.3230466842651367,
+                  3.3230466842651367,
+                  3.3230466842651367,
+                  -4.314416408538818,
+                  -4.314319610595703,
+                  -2.158135414123535,
+                  -2.158135414123535,
+                  -1.0974206924438477,
+                  -2.1581311225891113,
+                  -2.1581311225891113,
+                  -1.3091979026794434,
+                  -4.316211223602295,
+                  -1.3008487224578857,
+                  -1.3008588552474976,
+                  -1.300836205482483,
+                  -0.12812671065330505,
+                  -0.10344623029232025,
+                  -3.015481948852539,
+                  -0.898402214050293,
+                  -4.31616735458374,
+                  -0.6029102802276611,
+                  -0.3925873935222626,
+                  -0.3925873935222626,
+                  4.316324505462224
+                ],
+                [
+                  -3.8666679859161377,
+                  -1.9366488456726074,
+                  -1.9366488456726074,
+                  -3.8650612831115723,
+                  -1.936253547668457,
+                  -1.936253547668457,
+                  -1.291235089302063,
+                  -1.291235089302063,
+                  -1.291235089302063,
+                  10.415236473083496,
+                  10.2372407913208,
+                  5.2025957107543945,
+                  5.2025957107543945,
+                  0.2666639983654022,
+                  5.205234527587891,
+                  5.205234527587891,
+                  -1.354304313659668,
+                  -3.874821662902832,
+                  -1.2204704284667969,
+                  -1.2336622476577759,
+                  -1.220212697982788,
+                  -0.13696366548538208,
+                  -0.10557469725608826,
+                  -2.6563327312469482,
+                  -0.9356046319007874,
+                  -3.8743584156036377,
+                  -0.5796083211898804,
+                  -0.40000584721565247,
+                  -0.40000584721565247,
+                  3.876963084029701
+                ],
+                [
+                  -0.11085530370473862,
+                  -0.08899978548288345,
+                  -0.08899978548288345,
+                  -0.1033346876502037,
+                  -0.08261112123727798,
+                  -0.08261112123727798,
+                  -0.07328034192323685,
+                  -0.07328034192323685,
+                  -0.07328034192323685,
+                  -0.09351053088903427,
+                  -0.14383256435394287,
+                  -0.07169753313064575,
+                  -0.07169753313064575,
+                  -0.0563872791826725,
+                  -0.06724946945905685,
+                  -0.06724946945905685,
+                  13.6103515625,
+                  4.091099262237549,
+                  13.607985496520996,
+                  13.5868558883667,
+                  -6.58608865737915,
+                  -0.7876074314117432,
+                  -0.5333354473114014,
+                  -9.975824356079102,
+                  -0.11894074827432632,
+                  -0.34280356764793396,
+                  -0.04411669448018074,
+                  -0.03800414502620697,
+                  -0.03800414502620697,
+                  -3.604445572766124
+                ],
+                [
+                  -0.4344286620616913,
+                  -0.22463499009609222,
+                  -0.22463499009609222,
+                  -0.4321502447128296,
+                  -0.22374741733074188,
+                  -0.22374741733074188,
+                  -0.15031710267066956,
+                  -0.15031710267066956,
+                  -0.15031710267066956,
+                  -0.42945796251296997,
+                  -0.4286952018737793,
+                  -0.2220277339220047,
+                  -0.2220277339220047,
+                  -0.08232945203781128,
+                  -0.22176504135131836,
+                  -0.22176504135131836,
+                  -13.590641021728516,
+                  13.274208068847656,
+                  -13.5682954788208,
+                  -13.532306671142578,
+                  0.8986725211143494,
+                  -0.3939222991466522,
+                  -0.4220673441886902,
+                  -5.192551612854004,
+                  -0.21247056126594543,
+                  -4.38160514831543,
+                  -0.0795578882098198,
+                  -0.06847506761550903,
+                  -0.06847506761550903,
+                  0.4602027737382925
+                ],
+                [
+                  -0.5514063239097595,
+                  -0.2971917986869812,
+                  -0.2971917986869812,
+                  -0.5513295531272888,
+                  -0.27993452548980713,
+                  -0.27993452548980713,
+                  -0.2221069633960724,
+                  -0.2221069633960724,
+                  -0.2221069633960724,
+                  -0.5512334108352661,
+                  -0.5512543320655823,
+                  -0.2757687270641327,
+                  -0.2757687270641327,
+                  -0.1710498183965683,
+                  -0.2757662832736969,
+                  -0.2757662832736969,
+                  3.5845160484313965,
+                  -4.6018452644348145,
+                  3.5725784301757812,
+                  3.585287570953369,
+                  -14.270018577575684,
+                  -0.5835508704185486,
+                  -0.42024290561676025,
+                  10.151180267333984,
+                  -0.2906677722930908,
+                  -0.8350719809532166,
+                  -0.12067944556474686,
+                  -0.10135690122842789,
+                  -0.10135690122842789,
+                  0.5516665129884496
+                ],
+                [
+                  -0.10440046340227127,
+                  -0.09773456305265427,
+                  -0.09773456305265427,
+                  -0.09613404422998428,
+                  -0.09000259637832642,
+                  -0.09000259637832642,
+                  -0.08430832624435425,
+                  -0.08430832624435425,
+                  -0.08430832624435425,
+                  -0.08507609367370605,
+                  -0.17728544771671295,
+                  -0.07651542872190475,
+                  -0.07651542872190475,
+                  -0.06608706712722778,
+                  -0.07083602994680405,
+                  -0.07083602994680405,
+                  -3.4914474487304688,
+                  -8.233744621276855,
+                  -0.3091486990451813,
+                  -3.3890469074249268,
+                  13.996877670288086,
+                  -0.1915346384048462,
+                  -0.2110658586025238,
+                  6.203423023223877,
+                  -0.2155028134584427,
+                  -8.240047454833984,
+                  -0.07459157705307007,
+                  -0.06571540236473083,
+                  -0.06571540236473083,
+                  -5.73733815057
+                ],
+                [
+                  -0.32683029770851135,
+                  -0.23519231379032135,
+                  -0.23519231379032135,
+                  -0.31064894795417786,
+                  -0.22064109146595,
+                  -0.22064109146595,
+                  -0.17712552845478058,
+                  -0.17712552845478058,
+                  -0.17712552845478058,
+                  -0.29538464546203613,
+                  -0.365602046251297,
+                  -0.2046099603176117,
+                  -0.2046099603176117,
+                  -0.13618586957454681,
+                  -0.19615814089775085,
+                  -0.19615814089775085,
+                  -0.25917136669158936,
+                  -0.478457510471344,
+                  -0.19926810264587402,
+                  -0.20074023306369781,
+                  -5.037126541137695,
+                  0,
+                  0,
+                  -0.3181641697883606,
+                  13.963534355163574,
+                  1.2425144910812378,
+                  13.822148323059082,
+                  6.971088886260986,
+                  6.971088886260986,
+                  -1.0006497085711865
+                ],
+                [
+                  -0.5823919177055359,
+                  -0.30605119466781616,
+                  -0.30605119466781616,
+                  -0.580345094203949,
+                  -0.3047528862953186,
+                  -0.3047528862953186,
+                  -0.2324008196592331,
+                  -0.2324008196592331,
+                  -0.2324008196592331,
+                  -0.5781875848770142,
+                  -0.5794215798377991,
+                  -0.29690954089164734,
+                  -0.29690954089164734,
+                  -0.17889560759067535,
+                  -0.29663848876953125,
+                  -0.29663848876953125,
+                  -0.25190189480781555,
+                  -4.102923393249512,
+                  -0.7361516356468201,
+                  -0.1887257844209671,
+                  0.678367018699646,
+                  -0.7073225975036621,
+                  -0.6490991115570068,
+                  -4.060384273529053,
+                  -13.668110847473145,
+                  13.185347557067871,
+                  -13.486544609069824,
+                  -6.822945594787598,
+                  -6.822945594787598,
+                  0.6088835365096816
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Gracias"
+      ],
+      [
+        "en",
+        "Hasta luego"
+      ],
+      [
+        "en",
+        "Adios"
+      ],
+      [
+        "en",
+        "Nos vemos"
+      ],
+      [
+        "en",
+        "Ya me voy"
+      ],
+      [
+        "en",
+        "Hola"
+      ],
+      [
+        "en",
+        "Buenas"
+      ],
+      [
+        "en",
+        "Buenos dias"
+      ],
+      [
+        "en",
+        "Buenas tardes"
+      ],
+      [
+        "en",
+        "Que tal"
+      ],
+      [
+        "en",
+        "solicitar línea"
+      ],
+      [
+        "en",
+        "solicitar líneas"
+      ],
+      [
+        "en",
+        "quiero línea"
+      ],
+      [
+        "en",
+        "quiero líneas"
+      ],
+      [
+        "en",
+        "necesito línea"
+      ],
+      [
+        "en",
+        "necesito líneas"
+      ],
+      [
+        "en",
+        "ver línea"
+      ],
+      [
+        "en",
+        "ver líneas"
+      ],
+      [
+        "en",
+        "línea"
+      ],
+      [
+        "en",
+        "líneas"
+      ],
+      [
+        "en",
+        "ver la línea"
+      ],
+      [
+        "en",
+        "ver las líneas"
+      ],
+      [
+        "en",
+        "solicitar póliza"
+      ],
+      [
+        "en",
+        "solicitar pólizas"
+      ],
+      [
+        "en",
+        "necesito póliza"
+      ],
+      [
+        "en",
+        "necesito pólizas"
+      ],
+      [
+        "en",
+        "quiero póliza"
+      ],
+      [
+        "en",
+        "quiero pólizas"
+      ],
+      [
+        "en",
+        "ver póliza"
+      ],
+      [
+        "en",
+        "ver pólizas"
+      ],
+      [
+        "en",
+        "quiero ver póliza"
+      ],
+      [
+        "en",
+        "quiero ver pólizas"
+      ],
+      [
+        "en",
+        "ver la póliza"
+      ],
+      [
+        "en",
+        "ver las pólizas"
+      ],
+      [
+        "en",
+        "declarar siniestros"
+      ],
+      [
+        "en",
+        "declarar siniestro"
+      ],
+      [
+        "en",
+        "ocurrio siniestro"
+      ],
+      [
+        "en",
+        "tengo un siniestro"
+      ],
+      [
+        "en",
+        "ver siniestros"
+      ],
+      [
+        "en",
+        "ver siniestro"
+      ],
+      [
+        "en",
+        "siniestros"
+      ],
+      [
+        "en",
+        "siniestro"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "Gracias a usted"
+          },
+          {
+            "answer": "Hasta la próxima"
+          },
+          {
+            "answer": "Tenga un buen día"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hola, ¿En qué puedo ayudarlo?"
+          },
+          {
+            "answer": "Buenas, ¿En qué puedo ayudarlo?"
+          },
+          {
+            "answer": "Buenos dias, ¿En qué puedo ayudarlo?"
+          },
+          {
+            "answer": "Que tal, ¿En qué puedo ayudarlo?"
+          }
+        ],
+        "lineas.solicitar": [
+          {
+            "answer": "Para solicitar una línea lo puede hacer desde el..."
+          }
+        ],
+        "lineas.ver": [
+          {
+            "answer": "Para ver sus líneas lo puede hacer desde..."
+          }
+        ],
+        "poliza.solicitar": [
+          {
+            "answer": "Para solicitar una póliza lo puede hacer desde el..."
+          }
+        ],
+        "poliza.ver": [
+          {
+            "answer": "Para ver una póliza lo puede hacer desde el..."
+          }
+        ],
+        "siniestro.declarar": [
+          {
+            "answer": "Para declarar un siniestro lo puede hacer desde..."
+          }
+        ],
+        "siniestro.ver": [
+          {
+            "answer": "Para ver sus siniestros lo puede hacer desde..."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
